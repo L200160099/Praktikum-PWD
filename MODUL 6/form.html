@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>form</title>
+<link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+<h2><marquee>free registration</marquee></h2>
+<form action="proses.php" method="post" name="form">
+<table width="68%" border="0" align="center" cellpadding="0">
+<tr>
+<td class='td' width="15%">nama</td>
+<td width="2%">:</td>
+<td width+"83%"><input name="txtnama" type="text" id="txtnama"></td>
+</tr>
+<tr>
+<td class='td'>tgl lahir</td>
+<td>:</td>
+<td><input name="txtTgl" type="text" id="txtTgl" size="4" maxlength="2">/
+<input name="txtbulan" type="text" id="txtbulan" size="4" maxlength="2">/
+<input name="txtTahun" type="text" id="txtTahun" size="4" maxlength="2"></td>
+</tr>
+<tr>
+<td class='td'>alamat</td>
+<td>&nbsp;</td>
+<td><textarea name="txtalamat" cols="40" rows="2" id="txtalamat"></textarea></td>
+</tr>
+<tr>
+<td class='td'>kota</td>
+<td>:</td>
+<td><input name="txtkota" type="text" id="txtkota"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><input name="btnkirim" type="submit" id="btnkirim" value="kirim">
+<input name="btncancel" type="reset" id="btncancel" value="cancel">
+</tr>
+</table>
+</form>
+</body>
+</html>

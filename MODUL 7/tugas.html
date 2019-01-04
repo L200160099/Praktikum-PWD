@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>nilai</title>
+		<script language='javascript'>
+			function cek() {
+			nilai=document.myform.a.value;
+			nilai = parseInt(nilai);
+			hasil = "";
+			if (nilai >= 0 & nilai <= 20){
+				hasil = 'E'}
+			else if(nilai >= 21 & nilai <= 40){
+				hasil='D'}
+			else if(nilai >= 41 & nilai <= 60){
+				hasil='C'}
+			else if(nilai >= 61 & nilai <= 80){
+				hasil='B'}
+			else if(nilai >= 81 & nilai <= 100){
+				hasil='A'}
+			else {
+				hasil='hmm'}
+			document.myform.hasil.value = hasil;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform">
+		<h3>Keputusan</h3></br>
+		Nilai = <input type='text' name='a' size='5'></br>
+		<input type='button' name='aksi' value='Cek' onclick='cek()'>
+		<br><br>
+		<b>Hasil=</b><input type='text' name='hasil' size='5'>
+		</form>
+	</body>
+</html>
